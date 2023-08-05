@@ -9,7 +9,7 @@ def get_one_scrape(url):
     
     # Request
     try:
-        r1 = requests.get(url, headers=headers, timeout=20)
+        r1 = requests.get(url, headers=headers, timeout=10)
         print("    Request Received")
     except:
         print("    REQUEST FAILED, MOVING ON")
